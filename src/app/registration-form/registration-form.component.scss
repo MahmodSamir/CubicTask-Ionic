@@ -1,0 +1,14 @@
+ion-content {
+  --padding-start: 16px;
+  --padding-end: 16px;
+}
+
+form {
+  ion-item {
+    --inner-padding-end: 8px;
+  }
+
+  ion-button {
+    margin-top: 20px;
+  }
+}

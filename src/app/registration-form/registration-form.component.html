@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ translations[currentLanguage].title }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="switchLanguage()">
+        {{ currentLanguage === 'en' ? 'Arabic' : 'English' }}
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">{{ translations[currentLanguage].name }}</ion-label>
+      <ion-input formControlName="name" type="text"></ion-input>
+    </ion-item>
+    <div
+      *ngIf="registrationForm.get('name').invalid && (registrationForm.get('name').dirty || registrationForm.get('name').touched)">
+      <ion-note color="danger">{{ translations[currentLanguage].nameMessage }}</ion-note>
+    </div>
+
+    <ion-item>
+      <ion-label position="floating">{{ translations[currentLanguage].email }}</ion-label>
+      <ion-input formControlName="email" type="email"></ion-input>
+    </ion-item>
+    <div
+      *ngIf="registrationForm.get('email').invalid && (registrationForm.get('email').dirty || registrationForm.get('email').touched)">
+      <ion-note color="danger">{{ translations[currentLanguage].emailMessage }}</ion-note>
+    </div>
+
+    <ion-item>
+      <ion-label position="floating">{{ translations[currentLanguage].phoneNumber }}</ion-label>
+      <ion-input formControlName="phoneNumber" type="number"></ion-input>
+    </ion-item>
+    <div
+      *ngIf="registrationForm.get('phoneNumber').invalid && (registrationForm.get('phoneNumber').dirty || registrationForm.get('phoneNumber').touched)">
+      <ion-note color="danger">{{ translations[currentLanguage].phoneMessage }}</ion-note>
+    </div>
+
+    <ion-item>
+      <ion-label>{{ translations[currentLanguage].favoriteBranch }}</ion-label>
+      <ion-select formControlName="favoriteBranch">
+        <ion-select-option *ngFor="let branch of branches" [value]="branch.id">{{
+          branch.branchname}}</ion-select-option>
+      </ion-select>
+      <div
+        *ngIf="registrationForm.get('favoriteBranch').invalid && (registrationForm.get('favoriteBranch').dirty || registrationForm.get('favoriteBranch').touched)">
+        <ion-note color="danger">{{ translations[currentLanguage].branchMessage }}</ion-note>
+      </div>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">{{ translations[currentLanguage].submit }}</ion-button>
+  </form>
+  <div *ngIf="center">
+    <google-map [center]="center" [zoom]="15" [options]="{zoomControl: true}">
+      <map-marker [position]="markerPosition"></map-marker>
+    </google-map>
+  </div>
+  <div *ngIf="!center">
+    <ion-note color="danger">{{ translations[currentLanguage].mapMessage }}</ion-note>
+  </div>
+</ion-content>
