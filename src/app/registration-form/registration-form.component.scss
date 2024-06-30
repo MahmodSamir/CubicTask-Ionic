@@ -13,7 +13,8 @@ form {
   }
 }
 
-google-map {
-  width: 100%;
-  height: 300px;
+::ng-deep google-map > .map-container {
+  margin-top: 10px;
+  width: auto !important;
+  height: 250px !important;
 }
