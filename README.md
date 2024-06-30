@@ -33,13 +33,13 @@ This is a simple Angular, Ionic framework Registration page
 
 - clone the repository by running
   ```
-    git clone https://github.com/MahmodSamir/CubicTask-Ionic.git
+  git clone https://github.com/MahmodSamir/CubicTask-Ionic.git
   ```
- - test on browser by running
+- test on browser by running
   ```
   ionic serve
   ```
- - test on android real device or emulator by running
+- test on android real device or emulator by running
   ```
    ionic capacitor run android
   ```
@@ -47,21 +47,21 @@ This is a simple Angular, Ionic framework Registration page
 
 ## Troubleshooting
 - ensure google-maps package installed  
-    ```
-    npm install @angular/google-maps
-    ```
+  ```
+  npm install @angular/google-maps
+  ```
    instead of not longer supported package
-    ```
-    @agm/core 
-    ```
+  ```
+  @agm/core 
+  ```
 - *If you encountered failed to load branches error on android device while it's wokring fine on browser*
    -  http request blocked by default since Android 9 ensure this code added to capacitor.config.ts file to allow it
-    ```
-    server: {
-        androidScheme: 'http',
-        cleartext: true,
-      },
-    ```
+  ```
+  server: {
+      androidScheme: 'http',
+      cleartext: true,
+    },
+  ```
 ## Code Snippets
  - Real-time validation if field controller get touched or value changed or value invalid
   ![validation](https://github.com/MahmodSamir/CubicTask-Ionic/assets/63668000/147cf624-47ba-48c2-8415-75e8dbf2b05f)
