@@ -1,19 +1,23 @@
-# Cubic Ionic Registration Page Task
+## Cubic Ionic Registration Page Task
 
 This is a simple Angular, Ionic framework Registration page
 
 ## Demo
 <h4>On Browser</h4>
 
- [Click to watch browser demo video on google drive](https://drive.google.com/file/d/1z_2ho3UDTSSSiDNuKZSGL47DUib98kx3/view?usp=sharing)
+ [Click to watch browser demo video on google drive](https://drive.google.com/file/d/1fiV9zhkIC1BAJk2Ntd17Le0XCC0bmQ85/view?usp=sharing)
   
 <h4>On Android Emulator</h4>
 
-[Click to watch android emulator video on google drive](https://drive.google.com/file/d/1no5kNwvRaZx_pV2zHirLWZgY20quoLM7/view?usp=sharing)
+[Click to watch android emulator video on google drive](https://drive.google.com/file/d/1Z-t-Wg-z8jaOZAl_Xp_D7Q7_Vw4V7-wI/view?usp=sharing)
 
 <h4>On Real-Android device</h4>
 
-[Click to watch real-android device video on google drive](https://drive.google.com/file/d/1pvia670iAyAJF_fsjsnPbgUR4oh8c18k/view?usp=sharing)
+[Click to watch real-android device video on google drive](https://drive.google.com/file/d/19sGjwUtHtb6UEhRKzK33HClj7OF51up0/view?usp=sharing)
+
+<h4>Check on responsivness</h4>
+
+[Click to watch responsivness checking video on google drive](https://drive.google.com/file/d/1oAIiM7j5PhFAwUJRzOx3SNAUwDyxL75Q/view?usp=sharing)
 
 <h2>Features</h2>
 
@@ -81,6 +85,8 @@ This is a simple Angular, Ionic framework Registration page
   ![switch](https://github.com/MahmodSamir/CubicTask-Ionic/assets/63668000/de82a8bf-1217-4081-b1ca-cda1b502cebc)
 - On form submitting check if form valid to show success message
   ![successForm](https://github.com/MahmodSamir/CubicTask-Ionic/assets/63668000/ab729530-d569-4880-addb-31d73dbb6881)
+- Responsive design
+  ![responsive](https://github.com/MahmodSamir/CubicTask-Ionic/assets/63668000/48b207e4-c6bd-4dd7-85ee-a45b3d7fc5e1)
 
 ## Application Screenshots
 - Form UI EN
@@ -91,7 +97,7 @@ This is a simple Angular, Ionic framework Registration page
   ![errorEN](https://github.com/MahmodSamir/CubicTask-Ionic/assets/63668000/03a27370-d429-493b-9676-d1abba01ac5a)
 - Form fields invalid messages AR
   ![errorAR](https://github.com/MahmodSamir/CubicTask-Ionic/assets/63668000/04a3b948-84d8-4258-9e8d-3c4a96643367)
-- Branches dropdown menu
-  ![branches](https://github.com/MahmodSamir/CubicTask-Ionic/assets/63668000/31415759-9fea-438c-aa76-2e10f5490627)
+- Branches dropdown menu  <br/>
+  ![branches](https://github.com/MahmodSamir/CubicTask-Ionic/assets/63668000/c82cae1a-047b-4e0d-bf84-cf55931e3fd6)
 - google map pinned with Zizinia branch latlng
-  ![map](https://github.com/MahmodSamir/CubicTask-Ionic/assets/63668000/ea3d3253-5f11-4223-b817-48063bfde94d)
+  ![map](https://github.com/MahmodSamir/CubicTask-Ionic/assets/63668000/c0847d0b-3a1a-4f0a-8a49-04f02076e497)
