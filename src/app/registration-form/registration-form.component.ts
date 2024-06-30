@@ -26,7 +26,7 @@ export class RegistrationFormComponent implements OnInit {
       emailMessage: 'Please enter a valid email.',
       phoneMessage: 'Please enter a valid Phone Number.',
       branchMessage: 'Please select a branch.',
-      mapMessage: 'Cannot load google map, server error or the specified branch not found.',
+      mapMessage: 'failed to load google map, server error or the specified branch not found.',
     },
     ar: {
       title: 'التسجيل',
@@ -41,7 +41,7 @@ export class RegistrationFormComponent implements OnInit {
       emailMessage: 'ادخل بريد الكتروني صحيح',
       phoneMessage: 'ادخل رقم هاتف صحيح',
       branchMessage: 'اختر فرع',
-      mapMessage: 'لا يمكن تحميل خريطة جوجل هنالك مشكلة بالسيرفر او الفرع المحدد غير موجود',
+      mapMessage: 'لا يمكن تحميل خريطة جوجل هنالك خطأ بالسيرفر او الفرع المحدد غير موجود',
     },
   };
   center: google.maps.LatLngLiteral;
